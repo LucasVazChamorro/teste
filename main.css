@@ -1,0 +1,133 @@
+body {
+    background-color: #d2f1fa;
+    margin: 0;
+}
+.navbar {
+background-color: #19036e;
+overflow: hidden;
+}
+
+.navbar ul { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li { 
+    display: inline-block;
+}
+
+.navbar ul li a {  
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+
+.navbar ul li a::before,
+.navbar ul li a::after {
+    content: ''; 
+    position: absolute; 
+    width: 0; 
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.6s ease;
+}
+
+.navbar ul li a::before {
+    left: 0;
+    bottom: 0;
+}
+
+.navbar ul li a::after {
+    right: 0;
+    top: 0;
+}
+
+.navbar ul li a:hover::before,
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+.content {
+    padding: 20px;  
+}
+
+.header, .footer {
+    background-color: #19036e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+input, button {
+    padding: 8px;
+    margin-bottom: 4px;
+    width: 200px;
+    resize: none;
+}
+
+button {
+    background-color: #2e8dcc;
+    border: none;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+    cursor: grab;
+    width: 140px;
+}
+
+button:hover {
+    background-color: #275dae;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh; 
+    margin-top: 20px;
+}
+
+form#lista_tarefas {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+form#lista_tarefas input,
+form#lista_tarefas button {
+    margin: 5px;
+}
+
+ol {
+    list-style-type: disc;
+    padding-left: 10px;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #857d7dfb;
+}
+
+.footer {
+    background-color: #19036e;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+
+}
